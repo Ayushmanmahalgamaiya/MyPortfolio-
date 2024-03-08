@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="portstyle.css">
+    <script src="https://kit.fontawesome.com/4482102ef8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contect">Contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars"  onclick="openmenu()"></i>
+             </nav>
+             <div class="header-text">
+                 <p>Web Developer</p>
+                 <h1>Hi,I'm <span>Ayushman Mahalgamaiya</span><br> from Gwalior</h1>
+             </div>
+        </div>
+    </div>
+    <!-----------------about----------------->
+    <div id="about">
+        <div class ="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/myphoto.jpeg">
+                </div>
+            <div class="about-col-2">
+                     <h1 class="sub-title">About Me</h1>
+                    <p>hii ,my name is Ayushman mahalgamaiya</p>
+
+
+                    <div class="tab-titles">
+                         <p class="tab-links active-link"  onclick="opentab('skills')"> Skills </p>
+                        <p class="tab-links" onclick="opentab('Experience')"> Experience </p>
+                         <p class="tab-links" onclick="opentab('Education')"> Education </p>
+                    </div>
+                    <div class="tab-contents active-tab"  id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interface</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>Machine learning</span><br>deep learning</li>
+                            <li><span>python Developer</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>*****</span><br>startups</li>
+        
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>currently pursuing(Btech)</span><br>Madhav Institute of Technology and Science, Gwalior</li>
+                            <li><span>12th-2020</span><br>Jawahar Navodaya Vidyalaya,Narmadapuram(MP)</li>
+                            <li><span>10th-2018</span><br>Jawahar Navodaya Vidyalaya,Narmadapuram(MP)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------services------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web Design</h2>
+                    <p>***discription about this </p>
+                    <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Machine learning</h2>
+                    <p>***discription about this </p>
+                    <a href="#">Learn more </a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>***discription about this </p>
+                    <a href="#">Learn more </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------portfolio---------------->
+    <div id="portfolio">
+         <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                   <img src="image/work-1.png" >
+                   <div class="layer">
+                    <h3>Facemask Detection </h3>
+                    <p> "I designed and implemented a Face Mask Predictor using machine learning"</p>
+                    <a href="https://github.com/Ayushmanmahalgamaiya/face-mask-detection-keras"><i class="fa-solid fa-link"></i></a>
+                   </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png" >
+                    <div class="layer">
+                        <h3>IPL pridictor</h3>
+                        <p>This is my first machine learning project </p>
+                        <a href="https://github.com/Ayushmanmahalgamaiya/IPL-predictor"><i class="fa-solid fa-link"></i></a>
+                       </div>
+                 </div>
+                 <div class="work">
+                    <img src="image/work-3.png" >
+                    <div class="layer">
+                        <h3>Weather Detection App</h3>
+                        <p> python project </p>
+                        <a href="https://github.com/Ayushmanmahalgamaiya/weatherapp/blob/main/demo.py"><i class="fa-solid fa-link"></i></a>
+                       </div>
+                 </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+         </div>   
+    </div>
+<!-----------contect------------------->
+<div id="contect">
+    <div class="container">
+        <div class="row">
+            <div class="contect-left">
+                <h1 class="sub=title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>2021ai56ay@mitsgwl.ac.in</p>
+                <p><i class="fa-solid fa-phone"></i>7879621720</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a> 
+                    <a href="https://www.instagram.com/ayushman_mahalgamaiya/"><i class="fa-brands fa-instagram"></i></a> 
+                    <a href="www.linkedin.com/in/ayushman-mahalgamaiya-899143263/"><i class="fa-brands fa-linkedin"></i></a> 
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a> 
+                    <a href="https://github.com/Ayushmanmahalgamaiya/"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="image/Ayushman_CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contect-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email"placeholder="your email" required>
+                    <textarea name="Message" rows="6" placeholder="your message" required></textarea>
+                    <button type="submit" class="btn btn2 "> submit </button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ ayushman.  Made by me <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwoJ3RcWNioy3UhSy6DkBnFIEx0I4ghMh6kbFLCLTSsJvWS7xHzaH8kjBExvK26R6GA/exec'
+
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")   
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML= "Messgae sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
